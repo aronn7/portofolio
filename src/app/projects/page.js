@@ -1,10 +1,22 @@
-"use client";
-
 import { projectsData } from "@/data/projects";
 import ProjectCard from "@/components/ui/ProjectCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata = {
+    title: "Semua Proyek & Portofolio",
+    description:
+        "Daftar lengkap proyek pengembangan web, frontend, dan aplikasi modern oleh Ahmad Rommy Q.",
+    alternates: {
+        canonical: "/projects",
+    },
+    openGraph: {
+        title: "Semua Proyek & Portofolio | Ahmad Rommy Q",
+        description:
+            "Daftar lengkap proyek pengembangan web, frontend, dan aplikasi modern oleh Ahmad Rommy Q.",
+    },
+};
 
 export default function ProjectsPage() {
     return (
@@ -35,4 +47,3 @@ export default function ProjectsPage() {
         </main>
     );
 }
-

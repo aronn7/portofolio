@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -11,10 +9,50 @@ import {
   ExternalLink,
   Github,
   CheckCircle2,
-  Calendar,
   Sparkles,
   Layers,
 } from "lucide-react";
+
+export async function generateStaticParams() {
+  return projectsData.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+export async function generateMetadata({ params }) {
+  const project = projectsData.find((p) => p.slug === params.slug);
+  if (!project) {
+    return {
+      title: "Proyek Tidak Ditemukan",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.summary || project.description,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Ahmad Rommy Q`,
+      description: project.summary || project.description,
+      images: [
+        {
+          url: project.image,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Ahmad Rommy Q`,
+      description: project.summary || project.description,
+      images: [project.image],
+    },
+  };
+}
 
 export default function ProjectDetailPage({ params }) {
   const project = projectsData.find((p) => p.slug === params.slug);

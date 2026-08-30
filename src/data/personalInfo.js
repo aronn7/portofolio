@@ -15,7 +15,7 @@ export const personalInfo = {
     whatsappUrl: "https://wa.me/6288219950941?text=Halo%20Ahmad,%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20proyek.",
     resumeUrl: "/resume.pdf",
     socials: {
-        github: "https://www.bing.com/ck/a?!&&p=3071096c0057704742c9fee1a1f3439838cdccdc3716d832287d2ca97ec21c52JmltdHM9MTc4ODA0ODAwMA&ptn=3&ver=2&hsh=4&fclid=0250aa9c-6a78-678c-39e7-bf286b7966a7&psq=github+aronn7&u=a1aHR0cHM6Ly9naXRodWIuY29tL2Fyb25uNy8",
+        github: "https://github.com/aronnr7",
         linkedin: "https://linkedin.com",
         instagram: "https://www.instagram.com/cloudd.aq?igsi=MTVhZ253azl3MjlmZQ==",
         twitter: "https://twitter.com",
