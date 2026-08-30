@@ -1,26 +1,48 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
-    try {
-        const { name, email, message } = await request.json();
+  try {
+    const body = await request.json();
+    const { name, email, subject, message } = body;
 
-        if (!name || !email || !message) {
-            return NextResponse.json(
-                { error: 'Semua field harus diisi.' },
-                { status: 400 }
-            );
-        }
-
-        // Tempatkan logika pengiriman email di sini (misal: Resend API)
-
-        return NextResponse.json(
-            { message: 'Pesan berhasil dikirim!' },
-            { status: 200 }
-        );
-    } catch (error) {
-        return NextResponse.json(
-            { error: 'Gagal mengirim pesan.' },
-            { status: 500 }
-        );
+    // Validate inputs
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: "Nama, email, dan pesan wajib diisi." },
+        { status: 400 }
+      );
     }
+
+    // Basic email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Format email tidak valid." },
+        { status: 400 }
+      );
+    }
+
+    // You can integrate Resend, SendGrid, or Nodemailer here when ready.
+    console.log("Pesan Kontak Diterima:", {
+      name,
+      email,
+      subject: subject || "Tanpa Subjek",
+      message,
+      timestamp: new Date().toISOString(),
+    });
+
+    return NextResponse.json(
+      {
+        message: "Pesan Anda berhasil diterima! Terima kasih telah menghubungi saya.",
+        success: true,
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Contact API error:", error);
+    return NextResponse.json(
+      { error: "Gagal memproses pesan. Silakan coba kembali nanti." },
+      { status: 500 }
+    );
+  }
 }
