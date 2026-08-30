@@ -1,3 +1,23 @@
+export const metadata = {
+    metadataBase: new URL("https://portofolio-aronn7.vercel.app"),
+    title: "Ahmad Rommy Q | Web Developer",
+    description:
+        "Portfolio Ahmad Rommy Q, web developer yang membuat website modern, responsif, dan interaktif.",
+    keywords: [
+        "Ahmad Rommy Q",
+        "Portfolio Ahmad Rommy",
+        "Web Developer Indonesia",
+        "Frontend Developer"
+    ],
+    alternates: {
+        canonical: "/"
+    },
+    robots: {
+        index: true,
+        follow: true
+    }
+};
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
