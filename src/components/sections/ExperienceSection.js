@@ -13,7 +13,7 @@ export default function ExperienceSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           badge="Perjalanan Karier"
-          title="Pengalaman & Edukasi"
+          title="Pengalaman"
           subtitle="Jejak langkah profesional dan latar belakang akademis dalam dunia rekayasa perangkat lunak."
         />
 

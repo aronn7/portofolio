@@ -4,8 +4,8 @@ export const skillCategories = [
         title: "Frontend & UI",
         description: "Membangun tampilan modern, interaktif, dan responsif",
         skills: [
-            { name: "React.js", level: "Sangat Mahir", description: "Arsitektur komponen interaktif & state management modern", icon: "Code2", color: "from-cyan-500 to-blue-500" },
-            { name: "Next.js 14", level: "Sangat Mahir", description: "App Router, SSR, SSG, Server Actions & optimasi performa", icon: "Layers", color: "from-slate-200 to-slate-400" },
+            { name: "React.js", level: "Mahir", description: "Arsitektur komponen interaktif & state management modern", icon: "Code2", color: "from-cyan-500 to-blue-500" },
+            { name: "Next.js 14", level: "Mahir", description: "App Router, SSR, SSG, Server Actions & optimasi performa", icon: "Layers", color: "from-slate-200 to-slate-400" },
             { name: "JavaScript (ES6+)", level: "Sangat Mahir", description: "Logika pemrograman asinkron, DOM, dan ES modules", icon: "FileCode2", color: "from-yellow-400 to-amber-500" },
             { name: "TypeScript", level: "Mahir", description: "Type-safety ketat, interfaces, generics, dan integrasi Next.js", icon: "FileCode", color: "from-blue-500 to-indigo-600" },
             { name: "Tailwind CSS", level: "Sangat Mahir", description: "Desain antarmuka responsif utility-first & kustomisasi theme", icon: "Palette", color: "from-teal-400 to-cyan-500" },
@@ -33,7 +33,7 @@ export const skillCategories = [
         description: "Peralatan modern untuk kolaborasi dan produktivitas",
         skills: [
             { name: "Git & GitHub", level: "Sangat Mahir", description: "Version control, branching strategy, pull requests, & CI/CD", icon: "GitBranch", color: "from-orange-500 to-red-600" },
-            { name: "Figma UI/UX", level: "Mahir", description: "Wireframing, prototipe desain visual, dan konversi ke kode", icon: "Figma", color: "from-purple-400 to-pink-500" },
+            { name: "Figma UI/UX", level: "Sangat Mahir", description: "Wireframing, prototipe desain visual, dan konversi ke kode", icon: "Figma", color: "from-purple-400 to-pink-500" },
             { name: "VS Code", level: "Sangat Mahir", description: "Code editor utama untuk penulisan kode cepat, ekstensi, & debugging modern", icon: "Terminal", color: "from-blue-400 to-indigo-500" },
             { name: "Postman", level: "Mahir", description: "Pengujian API, automasi endpoint request, dan dokumentasi", icon: "Send", color: "from-orange-400 to-amber-500" },
             { name: "Vercel / Netlify", level: "Sangat Mahir", description: "Deployment otomatis, preview branch, dan serverless functions", icon: "Cloud", color: "from-slate-200 to-slate-400" },
