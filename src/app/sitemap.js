@@ -1,6 +1,6 @@
 import { projectsData } from "@/data/projects";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portofolio-aronn7.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ahmadrommy.vercel.app";
 
 export default function sitemap() {
     const projectUrls = projectsData.map((project) => ({

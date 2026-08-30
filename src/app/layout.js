@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portofolio-aronn7.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ahmadrommy.vercel.app";
 
 export const metadata = {
     metadataBase: new URL(siteUrl),
