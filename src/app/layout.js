@@ -7,11 +7,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portofolio-aronn7.v
 export const metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        default: "Ahmad Rommy Q | Fullstack Web & Frontend Specialist",
-        template: "%s | Ahmad Rommy Q",
+        default: "Ahmad Rommy Q - Portfolio",
+        template: "%s - Portfolio",
     },
     description:
-        "Portofolio resmi Ahmad Rommy Q (Rommy / aronnr7) - Web Developer & Frontend Specialist dari SMKN 20 Jakarta. Mengembangkan aplikasi web modern, responsif, cepat, dan interaktif dengan Next.js, React, dan Tailwind CSS.",
+        "SMKN 20 Jakarta ... Mempelajari dasar-dasar pemrograman web, pengembangan aplikasi frontend & backend, serta manajemen basis data relasional.",
     keywords: [
         "Ahmad Rommy Q",
         "Ahmad Rommy Qurniawan",
@@ -19,16 +19,15 @@ export const metadata = {
         "Rommy",
         "aronnr7",
         "aronn7",
-        "Portofolio Ahmad Rommy",
-        "Portfolio Ahmad Rommy Q",
-        "Web Developer Indonesia",
-        "Frontend Developer Indonesia",
-        "Fullstack Developer Indonesia",
         "SMKN 20 Jakarta",
-        "Next.js Developer",
-        "React Developer",
+        "Portfolio Ahmad Rommy Q",
+        "Web Developer",
+        "Frontend Developer",
+        "Fullstack Developer",
+        "Rekayasa Perangkat Lunak",
+        "Next.js",
+        "React",
         "Tailwind CSS",
-        "Web Developer Jakarta",
     ],
     authors: [{ name: "Ahmad Rommy Q", url: siteUrl }],
     creator: "Ahmad Rommy Q",
@@ -43,34 +42,34 @@ export const metadata = {
     },
     icons: {
         icon: [
+            { url: "/images/icon.png", sizes: "192x192", type: "image/png" },
             { url: "/favicon.ico" },
-            { url: "/images/icon.jpg" },
         ],
-        shortcut: "/images/icon.jpg",
-        apple: "/images/icon.jpg",
+        shortcut: "/images/icon.png",
+        apple: "/images/icon.png",
     },
     openGraph: {
         type: "website",
         locale: "id_ID",
         url: siteUrl,
-        siteName: "Ahmad Rommy Q Portfolio",
-        title: "Ahmad Rommy Q | Fullstack Web & Frontend Specialist",
+        siteName: "Ahmad Rommy Q",
+        title: "Ahmad Rommy Q - Portfolio",
         description:
-            "Portofolio profesional Ahmad Rommy Q - Showcase proyek modern, interaktif, dan performa tinggi menggunakan Next.js, React, dan Tailwind CSS.",
+            "SMKN 20 Jakarta ... Mempelajari dasar-dasar pemrograman web, pengembangan aplikasi frontend & backend, serta manajemen basis data relasional.",
         images: [
             {
                 url: "/images/profile1.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Ahmad Rommy Q - Web Developer Portfolio",
+                alt: "Ahmad Rommy Q - Portfolio",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Ahmad Rommy Q | Fullstack Web & Frontend Specialist",
+        title: "Ahmad Rommy Q - Portfolio",
         description:
-            "Portofolio profesional Ahmad Rommy Q - Showcase proyek modern dan interaktif dengan Next.js & React.",
+            "SMKN 20 Jakarta ... Mempelajari dasar-dasar pemrograman web, pengembangan aplikasi frontend & backend, serta manajemen basis data relasional.",
         images: ["/images/profile1.jpg"],
         creator: "@aronnr7",
     },
@@ -113,7 +112,7 @@ const jsonLd = {
             "url": siteUrl,
             "image": `${siteUrl}/images/profile1.jpg`,
             "jobTitle": "Fullstack Web & Frontend Specialist",
-            "description": "Siswa Rekayasa Perangkat Lunak (RPL) SMKN 20 Jakarta dan Web Developer.",
+            "description": "SMKN 20 Jakarta ... Mempelajari dasar-dasar pemrograman web, pengembangan aplikasi frontend & backend, serta manajemen basis data relasional.",
             "worksFor": {
                 "@type": "Organization",
                 "name": "SMKN 20 Jakarta"
@@ -141,8 +140,8 @@ const jsonLd = {
             "@type": "WebSite",
             "@id": `${siteUrl}/#website`,
             "url": siteUrl,
-            "name": "Ahmad Rommy Q Portfolio",
-            "description": "Portofolio resmi Ahmad Rommy Q - Web Developer & Frontend Specialist.",
+            "name": "Ahmad Rommy Q - Portfolio",
+            "description": "SMKN 20 Jakarta ... Mempelajari dasar-dasar pemrograman web, pengembangan aplikasi frontend & backend, serta manajemen basis data relasional.",
             "publisher": {
                 "@id": `${siteUrl}/#person`
             },
