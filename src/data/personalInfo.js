@@ -15,7 +15,7 @@ export const personalInfo = {
     whatsappUrl: "https://wa.me/6288219950941?text=Halo%20Ahmad,%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20proyek.",
     resumeUrl: "/resume.pdf",
     socials: {
-        github: "https://github.com/aronnr7",
+        github: "https://github.com/aronn7",
         linkedin: "https://linkedin.com",
         instagram: "https://www.instagram.com/cloudd.aq?igsi=MTVhZ253azl3MjlmZQ==",
         twitter: "https://twitter.com",
@@ -49,4 +49,3 @@ export const personalInfo = {
         },
     ],
 };
-

@@ -122,7 +122,7 @@ const jsonLd = {
                 "name": "SMKN 20 Jakarta"
             },
             "sameAs": [
-                "https://github.com/aronnr7",
+                "https://github.com/aronn7",
                 "https://www.instagram.com/cloudd.aq"
             ],
             "knowsAbout": [
