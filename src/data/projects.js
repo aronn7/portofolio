@@ -59,6 +59,26 @@ export const projectsData = [
       "Mode tamu dengan progres lokal serta integrasi autentikasi dan leaderboard Supabase"
     ],
   },
+  {
+    id: "4",
+    slug: "aroncandy",
+    title: "AronnCandy - Game Match-3 Puzzle",
+    category: "Fullstack",
+    featured: true,
+    summary: "Game match-3 orisinal dengan 20 level di lima dunia, special candy, booster, serta leaderboard Supabase dengan validasi skor di server.",
+    description: "AronnCandy adalah game match-3 berbasis Next.js, React, dan TypeScript dengan engine game deterministik yang terpisah dari renderer. Pemain menyelesaikan 20 level dengan berbagai bentuk arena dan blocker seperti Ice berlapis, Chocolate, Stone, dan Lock. Special candy, kombinasi special, cascade, serta booster hammer/shuffle/rainbow menambah kedalaman strategi. Progres dan leaderboard tersinkronisasi melalui Supabase dengan validasi replay di sisi server, sementara mode tamu tetap berfungsi tanpa login.",
+    image: "/images/projects/projects-4.png",
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Vitest"],
+    demoLink: "https://aroncandy.vercel.app",
+    githubLink: "https://github.com/aronn7/aroncandy",
+    year: "2026",
+    highlights: [
+      "20 level dengan 10 bentuk arena (diamond, cross, heart, islands, dll) dan blocker Ice, Box, Chocolate, Stone, serta Lock",
+      "Special candy, kombinasi special, match T/L, cascade, multiplier, dan booster hammer/shuffle/rainbow",
+      "Lives dengan pemulihan 30 menit, daily reward, bintang, skor terbaik, dan penyimpanan lokal",
+      "Autentikasi magic-link, sinkronisasi progres, dan leaderboard dengan validasi replay di sisi server Supabase"
+    ],
+  },
 ];
 
 export default projectsData;
