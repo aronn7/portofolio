@@ -2,7 +2,7 @@
 
 Sebuah website portofolio profesional berdesain modern, elegan (*luxury dark theme & glassmorphism*), ultra-responsif (Mobile, Tablet, Desktop), dan siap di-deploy ke platform mana pun tanpa kendala.
 
-![Portfolio Preview](/public/images/projects/projects-1.png)
+![Portfolio Preview](/public/images/projects/)
 
 ---
 
